@@ -1,0 +1,90 @@
+:root {
+  --bmw-blue: #0166B1;
+  --bmw-dark: #1a1a1a;
+  --bmw-gray: #6b6b6b;
+  --bmw-border: #e8e8e8;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background-color: #ffffff;
+  color: var(--bmw-dark);
+  font-family: var(--font-bmw), 'Helvetica Neue', Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 24px 34px 0;
+  margin-bottom: 56px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.bmw-logo {
+  width: 41px;
+  height: 41px;
+  object-fit: contain;
+}
+
+.site-title {
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: var(--bmw-gray);
+}
+
+.site-title span {
+  color: inherit;
+}
+
+nav {
+  padding: 0 34px;
+  flex: 1;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--bmw-border);
+  text-decoration: none;
+  color: var(--bmw-dark);
+  font-size: 17px;
+  font-weight: 100;
+  letter-spacing: 0.01em;
+  transition: color 0.25s ease;
+  position: relative;
+}
+
+.menu-item:first-child {
+  border-top: 1px solid var(--bmw-border);
+}
+
+.menu-item:hover {
+  color: var(--bmw-blue);
+}
+
+.menu-item:hover .menu-arrow {
+  transform: translateX(6px);
+  color: var(--bmw-blue);
+}
+
+.menu-arrow {
+  font-size: 16px;
+  color: #c8c8c8;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+footer {
+  padding: 24px 34px;
+  font-size: 11px;
+  color: #b0b0b0;
+  letter-spacing: 0.04em;
+  border-top: 1px solid var(--bmw-border);
+  margin-top: auto;
+}
