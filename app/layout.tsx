@@ -24,12 +24,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-return (
-  <html lang="ko" className={bmwFont.variable}>
-    <body style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', margin: 0 }}>
-      {children}
-    </body>
-  </html>
-);
-
+  return (
+    <html lang="ko" className={bmwFont.variable}>
+      <body style={{ display: 'grid', gridTemplateRows: '1fr auto', minHeight: '100vh', margin: 0 }}>
+        {children}
+      </body>
+    </html>
+  );
 }

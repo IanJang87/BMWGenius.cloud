@@ -7,13 +7,17 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
+html, body {
+  height: 100%;
+}
+
 body {
   background-color: #ffffff;
   color: var(--bmw-dark);
   font-family: var(--font-bmw), 'Helvetica Neue', Arial, sans-serif;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 1fr auto;
 }
 
 header {
@@ -86,10 +90,7 @@ footer {
   color: #b0b0b0;
   letter-spacing: 0.04em;
   border-top: 1px solid var(--bmw-border);
-  position: sticky;
-  bottom: 0;
   background-color: #ffffff;
-  z-index: 10;
 }
 
 @media (min-width: 768px) {
