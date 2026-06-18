@@ -86,7 +86,10 @@ footer {
   color: #b0b0b0;
   letter-spacing: 0.04em;
   border-top: 1px solid var(--bmw-border);
-  margin-top: auto;
+  position: sticky;
+  bottom: 0;
+  background-color: #ffffff;
+  z-index: 10;
 }
 
 @media (min-width: 768px) {
