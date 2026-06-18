@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMW Genius Cloud</title>
+  <style>
+    @font-face {
+      font-family: 'BMWTypeNext';
+      src: url('BMWTypeNextKrTT-Thin.ttf') format('truetype');
+      font-weight: 100;
+      font-display: swap;
+    }
+
+    :root {
+      --bmw-blue: #0066b2;
+      --bmw-dark: #1c1c1c;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background-color: #ffffff;
+      color: var(--bmw-dark);
+      font-family: 'BMWTypeNext', 'Helvetica Neue', Arial, sans-serif;
+      padding: 48px 80px 80px;
+      line-height: 1.4;
+      letter-spacing: -0.04em;
+    }
+
+    header {
+      margin-bottom: 40px; /* ★ 여기 숫자를 줄이면 타이틀↔메뉴 간격이 좁아짐 */
+    }
+
+    h1 {
+      font-size: 19px;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 120px;
+    }
+
+    .menu-item {
+      font-size: 14px;
+      text-decoration: none;
+      color: #666;
+      transition: color 0.3s ease;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.02em;
+    }
+
+    .menu-item:hover {
+      color: var(--bmw-blue);
+    }
+
+    .menu-item::before {
+      content: '·';
+      margin-right: 12px;
+      opacity: 0.5;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 48px;
+      left: 48px;
+      font-size: 9px;
+      color: #aaa;
+      letter-spacing: normal;
+    }
+
+    .accent {
+      color: var(--bmw-blue);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>BMW Genius Cloud</h1>
+  </header>
+
+  <nav>
+    <a href="/models" class="menu-item">Models</a>
+    <a href="/colors" class="menu-item">Colors</a>
+    <a href="/bmw_excellence_club" class="menu-item">BMW Excellence Club 3.0+</a>
+  </nav>
+
+  <footer>
+    Copyright 2026. BMW Genius Jang Uihwan · Samchully Motors. All rights reserved.
+  </footer>
+
+</body>
+</html>
