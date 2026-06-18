@@ -17,11 +17,12 @@ body {
 }
 
 header {
-  padding: 24px 34px 0;
-  margin-bottom: 56px;
+  padding: 24px 34px;
+  margin-bottom: 0;
   display: flex;
   align-items: center;
   gap: 16px;
+  border-bottom: 1px solid var(--bmw-border);
 }
 
 .bmw-logo {
@@ -44,6 +45,7 @@ header {
 nav {
   padding: 0 34px;
   flex: 1;
+  margin-top: 16px;
 }
 
 .menu-item {
@@ -61,9 +63,6 @@ nav {
   position: relative;
 }
 
-.menu-item:first-child {
-  border-top: 1px solid var(--bmw-border);
-}
 
 .menu-item:hover {
   color: var(--bmw-blue);
@@ -75,8 +74,9 @@ nav {
 }
 
 .menu-arrow {
-  font-size: 16px;
+  font-size: 20px;
   color: #c8c8c8;
+  opacity: 0.8;
   transition: transform 0.25s ease, color 0.25s ease;
 }
 
