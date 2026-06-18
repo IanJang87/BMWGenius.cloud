@@ -88,3 +88,17 @@ footer {
   border-top: 1px solid var(--bmw-border);
   margin-top: auto;
 }
+
+@media (min-width: 768px) {
+  nav {
+    max-width: 50vw;
+    padding: 0 34px;
+    margin-top: 16px;
+  }
+  .menu-item {
+    border-bottom: none;
+  }
+  .menu-arrow {
+    display: none;
+  }
+}
