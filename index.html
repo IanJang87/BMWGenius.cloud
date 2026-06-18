@@ -6,20 +6,22 @@
   <title>BMW Genius Cloud</title>
   <meta name="apple-mobile-web-app-title" content="BMW Cloud">
   <meta name="application-name" content="BMW Cloud">
-  <link rel="apple-touch-icon" href="bmw-icon.png">
-  <link rel="icon" href="bmw-icon.png">
-  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="public/bmw-icon.png">
+  <link rel="icon" href="public/bmw-icon.png">
+  <link rel="manifest" href="public/manifest.json">
   <style>
     @font-face {
       font-family: 'BMWTypeNext';
-      src: url('BMWTypeNextKrTT-Thin.ttf') format('truetype');
+      src: url('public/BMWTypeNextKrTT-Thin.ttf') format('truetype');
       font-weight: 100;
       font-display: swap;
     }
 
     :root {
-      --bmw-blue: #0066b2;
-      --bmw-dark: #1c1c1c;
+      --bmw-blue: #0166B1;
+      --bmw-dark: #1a1a1a;
+      --bmw-gray: #6b6b6b;
+      --bmw-border: #e8e8e8;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -28,68 +30,100 @@
       background-color: #ffffff;
       color: var(--bmw-dark);
       font-family: 'BMWTypeNext', 'Helvetica Neue', Arial, sans-serif;
-      padding: 56px 48px 80px;
-      line-height: 1.4;
-      letter-spacing: -0.04em;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
     header {
-      margin-bottom: 40px;
+      padding: 24px 34px 0;
+      margin-bottom: 56px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
     }
 
-    h1 {
-      font-size: 19px;
+    .bmw-logo {
+      width: 41px;
+      height: 41px;
+      object-fit: contain;
+    }
+
+    .site-title {
+      font-size: 17px;
       font-weight: 400;
-      letter-spacing: -0.02em;
+      letter-spacing: 0.04em;
+      color: var(--bmw-gray);
     }
 
     nav {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      margin-bottom: 120px;
+      padding: 0 34px;
+      flex: 1;
     }
 
     .menu-item {
-      font-size: 14px;
-      text-decoration: none;
-      color: #666;
-      transition: color 0.3s ease;
       display: flex;
       align-items: center;
-      letter-spacing: -0.02em;
+      justify-content: space-between;
+      padding: 24px 0;
+      border-bottom: 1px solid var(--bmw-border);
+      text-decoration: none;
+      color: var(--bmw-dark);
+      font-size: 17px;
+      font-weight: 100;
+      letter-spacing: 0.01em;
+      transition: color 0.25s ease;
+    }
+
+    .menu-item:first-child {
+      border-top: 1px solid var(--bmw-border);
     }
 
     .menu-item:hover {
       color: var(--bmw-blue);
     }
 
-    .menu-item::before {
-      content: '·';
-      margin-right: 12px;
-      opacity: 0.5;
+    .menu-item:hover .menu-arrow {
+      transform: translateX(6px);
+      color: var(--bmw-blue);
+    }
+
+    .menu-arrow {
+      font-size: 16px;
+      color: #c8c8c8;
+      transition: transform 0.25s ease, color 0.25s ease;
     }
 
     footer {
-      position: fixed;
-      bottom: 48px;
-      left: 48px;
+      padding: 24px 34px;
       font-size: 11px;
-      color: #aaa;
-      letter-spacing: normal;
+      color: #b0b0b0;
+      letter-spacing: 0.04em;
+      border-top: 1px solid var(--bmw-border);
+      margin-top: auto;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>BMWGenius.cloud</h1>
+    <img src="public/bmw-logo.svg" alt="BMW" class="bmw-logo">
+    <p class="site-title">BMWGenius.cloud</p>
   </header>
 
   <nav>
-    <a href="/models" class="menu-item">Models</a>
-    <a href="/colors" class="menu-item">Colors</a>
-    <a href="/bmw_excellence_club" class="menu-item">BMW Excellence Club 3.0+</a>
+    <a href="/models" class="menu-item">
+      <span>Models</span>
+      <span class="menu-arrow">→</span>
+    </a>
+    <a href="/colors" class="menu-item">
+      <span>Colors</span>
+      <span class="menu-arrow">→</span>
+    </a>
+    <a href="/bmw_excellence_club" class="menu-item">
+      <span>BMW Excellence Club 3.0+</span>
+      <span class="menu-arrow">→</span>
+    </a>
   </nav>
 
   <footer>
