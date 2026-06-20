@@ -3,9 +3,9 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 const bmwFont = localFont({
-  src: "../public/BMWTypeNextKrTT-Thin.ttf",
+  src: "../public/BMWTypeNextKr-Light.otf",
   variable: "--font-bmw",
-  weight: "100",
+  weight: "300",
 });
 
 export const metadata: Metadata = {

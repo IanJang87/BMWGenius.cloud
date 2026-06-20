@@ -1,6 +1,13 @@
+@font-face {
+  font-family: 'BMWTypeNextKr-Bold';
+  src: url('/BMWTypeNextKr-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-display: swap;
+}
+
 :root {
   --bmw-blue: #0166B1;
-  --bmw-dark: #1a1a1a;
+  --bmw-dark: #6F6F6F;
   --bmw-gray: #6b6b6b;
   --bmw-border: #e8e8e8;
 }
@@ -97,6 +104,7 @@ nav {
   color: #ffffff;
   padding: 9.5px 15px 9.5px 19px;
   border-radius: 50px;
+  font-family: 'BMWTypeNextKr-Bold', 'Helvetica Neue', Arial, sans-serif;
   font-size: 13px;
   letter-spacing: 0.025em;
   word-spacing: 0.025em;
