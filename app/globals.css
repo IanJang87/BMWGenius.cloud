@@ -99,7 +99,7 @@ nav {
 .samchully-btn {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
   background-color: var(--bmw-blue);
   color: #ffffff;
   padding: 9.5px 15px 9.5px 19px;
@@ -112,7 +112,7 @@ nav {
 }
 
 .samchully-btn svg {
-  opacity: 0.4;
+  opacity: 0.6;
   display: block;
   align-self: center;
   position: relative;
