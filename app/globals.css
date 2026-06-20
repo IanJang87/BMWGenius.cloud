@@ -85,7 +85,7 @@ nav {
 }
 
 .samchully-wrap {
-  padding: 24px 34px;
+  padding: 24px 34px 16px;
   margin-top: auto;
 }
 
@@ -95,10 +95,11 @@ nav {
   gap: 6px;
   background-color: var(--bmw-blue);
   color: #ffffff;
-  padding: 9px 14px;
+  padding: 9px 14px 9px 18px;
   border-radius: 50px;
   font-size: 13px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.025em;
+  word-spacing: 0.3em;
   text-decoration: none;
   text-transform: uppercase;
 }
