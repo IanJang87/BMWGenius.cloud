@@ -99,9 +99,8 @@ nav {
   border-radius: 50px;
   font-size: 13px;
   letter-spacing: 0.025em;
-  word-spacing: 0.3em;
+  word-spacing: 0.025em;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 .samchully-btn svg {
