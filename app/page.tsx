@@ -35,7 +35,7 @@ export default function Home() {
       </main>
 
       <footer>
-        Copyright 2026. BMW Genius Jang Uihwan · Samchully Motors
+        © 2026 BMW Genius Jang Uihwan · Samchully Motors
       </footer>
     </>
   );
