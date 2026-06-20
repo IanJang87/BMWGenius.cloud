@@ -39,7 +39,7 @@ header {
   font-size: 17px;
   font-weight: 400;
   letter-spacing: 0.04em;
-  color: var(--bmw-gray);
+  color: var(--bmw-dark);
 }
 
 .site-title span {
@@ -111,7 +111,7 @@ nav {
 footer {
   padding: 24px 34px;
   font-size: 12px;
-  color: #b0b0b0;
+  color: var(--bmw-dark);
   letter-spacing: 0.04em;
   border-top: 1px solid var(--bmw-border);
   background-color: #ffffff;
