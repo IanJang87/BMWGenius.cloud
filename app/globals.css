@@ -95,7 +95,7 @@ nav {
   gap: 6px;
   background-color: var(--bmw-blue);
   color: #ffffff;
-  padding: 9px 14px 9px 18px;
+  padding: 9.5px 15px 9.5px 19px;
   border-radius: 50px;
   font-size: 13px;
   letter-spacing: 0.025em;
@@ -106,6 +106,10 @@ nav {
 
 .samchully-btn svg {
   opacity: 0.4;
+  display: block;
+  align-self: center;
+  position: relative;
+  top: -0.5px;
 }
 
 footer {
