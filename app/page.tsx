@@ -45,7 +45,7 @@ export default function Home() {
       </main>
 
       <footer>
-        © 2026 BMW Genius Jang Uihwan
+        © 2026 BMW Genius JANG UIHWAN
       </footer>
     </>
   );
