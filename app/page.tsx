@@ -31,6 +31,10 @@ export default function Home() {
             <span>BMW Excellence Club 3.0+</span>
             <span className="menu-arrow">›</span>
           </a>
+          <a href="https://www.samchullymotors.co.kr/" className="menu-item" target="_blank" rel="noopener noreferrer">
+            <span>Samchully Motors</span>
+            <span className="menu-arrow">›</span>
+          </a>
         </nav>
       </main>
 
