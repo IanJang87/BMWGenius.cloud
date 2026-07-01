@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
-// ✅ 배너 설정 — enabled를 false로 바꾸면 배너가 사라집니다
+// ✅ 배너 설정 — enabled true / false
 const BANNER = {
   enabled: false,
   changes: "개별소비세 5% 반영",
