@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import AnnouncementBanner from "./AnnouncementBanner";
 
 const bmwFont = localFont({
   src: "../public/BMWTypeNextKr-Light.otf",
@@ -27,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="ko" className={bmwFont.variable}>
       <body style={{ display: 'grid', gridTemplateRows: '1fr auto', minHeight: '100vh', margin: 0 }}>
+        <AnnouncementBanner />
         {children}
       </body>
     </html>
