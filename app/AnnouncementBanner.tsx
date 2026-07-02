@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 // ✅ 배너 설정 — enabled true / false
 const BANNER = {
   enabled: true,
-  changes: "개별소비세 5% 반영",
+  changes: "",
   date: "Jul 2, 2026",
   startDate: new Date('2026-07-02'),
   maxDays: 7,
@@ -63,7 +63,7 @@ export default function AnnouncementBanner() {
       }}>
         NEW
       </span>
-      어프로치북 업데이트. {BANNER.changes} · {BANNER.date}
+      최신 어프로치북 업데이트. {BANNER.changes} · {BANNER.date}
       <button
         onClick={() => setVisible(false)}
         style={{
