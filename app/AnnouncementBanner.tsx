@@ -63,7 +63,7 @@ export default function AnnouncementBanner() {
       }}>
         NEW
       </span>
-      최신 어프로치북 업데이트. {BANNER.changes} · {BANNER.date}
+      어프로치북 업데이트. {BANNER.changes} · {BANNER.date}
       <button
         onClick={() => setVisible(false)}
         style={{
