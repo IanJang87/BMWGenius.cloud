@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 
 // ✅ 배너 설정 — enabled true / false
 const BANNER = {
-  enabled: false,
+  enabled: true,
   changes: "개별소비세 5% 반영",
   date: "Jul 2, 2026",
   startDate: new Date('2026-07-02'),
